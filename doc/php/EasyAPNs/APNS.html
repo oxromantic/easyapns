@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class APNS</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class APNS</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Begin Document</p>
+		<p class="notes">
+			Located in <a class="field" href="_classes---class_APNS.php.html">/classes/class_APNS.php</a> (line <span class="field">34</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																				
+												<div class="method-definition">
+											<span class="method-result">APNS</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$db</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$args</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addMessageAlert" title="details" class="method-name">addMessageAlert</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$alert</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$actionlockey</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$lockey</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$locargs</span> = <span class="var-default">NULL</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">$number</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addMessageBadge" title="details" class="method-name">addMessageBadge</a>
+											([<span class="var-type">int</span>&nbsp;<span class="var-name">$number</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addMessageCustom" title="details" class="method-name">addMessageCustom</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">NULL</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addMessageSound" title="details" class="method-name">addMessageSound</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$sound</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#newMessage" title="details" class="method-name">newMessage</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$fk_device</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$delivery</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#processQueue" title="details" class="method-name">processQueue</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#queueMessage" title="details" class="method-name">queueMessage</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">163</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor.</p>
+<p class="description"><p>Initializes a database connection and perfoms any tasks that have been assigned.</p><p>Create a new PHP file named apns.php on your website...</p><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/DbConnect.html">DbConnect</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db</span><span class="src-sym">-&gt;</span><span class="src-id">show_errors</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/APNS.html">APNS</a></span><span class="src-sym">(</span><span class="src-var">$db</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p><p>Your iPhone App Delegate.m file will point to a PHP file with this APNS Object.  The url will end up looking something like:  https://secure.yourwebsite.com/apns.php?task=register&amp;appname=My%20App&amp;appversion=1.0.1&amp;deviceuid=e018c2e46efe185d6b1107aa942085a59bb865d9&amp;devicetoken=43df9e97b09ef464a6cf7561f9f339cb1b6ba38d8dc946edd79f1596ac1b0f66&amp;devicename=My%20Awesome%20iPhone&amp;devicemodel=iPhone&amp;deviceversion=3.1.2&amp;pushbadge=enabled&amp;pushalert=disabled&amp;pushsound=enabled</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">APNS</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$db</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$args</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$db</span><span class="var-description">: Database Object</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$args</span><span class="var-description">: Optional arguments passed through $argv or $_GET</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddMessageAlert" id="addMessageAlert"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addMessageAlert</span> (line <span class="line-number">702</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add Message Alert</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/DbConnect.html">DbConnect</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db</span><span class="src-sym">-&gt;</span><span class="src-id">show_errors</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/APNS.html">APNS</a></span><span class="src-sym">(</span><span class="src-var">$db</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;SIMPLE&nbsp;ALERT</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'2010-01-01&nbsp;00:00:00'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageAlert">addMessageAlert</a><span class="src-sym">(</span><span class="src-str">'Message&nbsp;received&nbsp;from&nbsp;Bob'</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;MAKES&nbsp;DEFAULT&nbsp;BUTTON&nbsp;WITH&nbsp;BOTH&nbsp;'Close'&nbsp;AND&nbsp;'View'&nbsp;BUTTONS</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;CUSTOM&nbsp;'View'&nbsp;BUTTON</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'2010-01-01&nbsp;00:00:00'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageAlert">addMessageAlert</a><span class="src-sym">(</span><span class="src-str">'Bob&nbsp;wants&nbsp;to&nbsp;play&nbsp;poker'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'PLAY'</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;MAKES&nbsp;THE&nbsp;'View'&nbsp;BUTTON&nbsp;READ&nbsp;'PLAY'</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;NO&nbsp;'View'&nbsp;BUTTON</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'2010-01-01&nbsp;00:00:00'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageAlert">addMessageAlert</a><span class="src-sym">(</span><span class="src-str">'Bob&nbsp;wants&nbsp;to&nbsp;play&nbsp;poker'</span><span class="src-sym">,&nbsp;</span><span class="src-str">''</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;MAKES&nbsp;AN&nbsp;ALERT&nbsp;WITH&nbsp;JUST&nbsp;AN&nbsp;'OK'&nbsp;BUTTON</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;CUSTOM&nbsp;LOCALIZATION&nbsp;STRING&nbsp;FOR&nbsp;YOUR&nbsp;APP</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'2010-01-01&nbsp;00:00:00'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageAlert">addMessageAlert</a><span class="src-sym">(</span><span class="src-id">NULL</span><span class="src-sym">,&nbsp;</span><span class="src-id">NULL</span><span class="src-sym">,&nbsp;</span><span class="src-str">'GAME_PLAY_REQUEST_FORMAT'</span><span class="src-sym">,&nbsp;</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'Jenna'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Frank'</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addMessageAlert
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$alert</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$actionlockey</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$lockey</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$locargs</span> = <span class="var-default">NULL</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">$number</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$number</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$alert</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$actionlockey</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$lockey</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$locargs</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddMessageBadge" id="addMessageBadge"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addMessageBadge</span> (line <span class="line-number">750</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add Message Badge</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/DbConnect.html">DbConnect</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db</span><span class="src-sym">-&gt;</span><span class="src-id">show_errors</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/APNS.html">APNS</a></span><span class="src-sym">(</span><span class="src-var">$db</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'2010-01-01&nbsp;00:00:00'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageBadge">addMessageBadge</a><span class="src-sym">(</span><span class="src-num">9</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;HAS&nbsp;TO&nbsp;BE&nbsp;A&nbsp;NUMBER</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addMessageBadge
+		</span>
+					([<span class="var-type">int</span>&nbsp;<span class="var-name">$number</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$number</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddMessageCustom" id="addMessageCustom"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addMessageCustom</span> (line <span class="line-number">778</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add Message Custom</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/DbConnect.html">DbConnect</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db</span><span class="src-sym">-&gt;</span><span class="src-id">show_errors</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/APNS.html">APNS</a></span><span class="src-sym">(</span><span class="src-var">$db</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'2010-01-01&nbsp;00:00:00'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageCustom">addMessageCustom</a><span class="src-sym">(</span><span class="src-str">'acme1'</span><span class="src-sym">,&nbsp;</span><span class="src-num">42</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;CAN&nbsp;BE&nbsp;NUMBER...</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageCustom">addMessageCustom</a><span class="src-sym">(</span><span class="src-str">'acme2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'foo'</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;...&nbsp;STRING</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageCustom">addMessageCustom</a><span class="src-sym">(</span><span class="src-str">'acme3'</span><span class="src-sym">,&nbsp;</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'bang'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'whiz'</span><span class="src-sym">))</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;OR&nbsp;ARRAY</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addMessageCustom
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">NULL</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: Name of Custom Object you want to pass back to your iPhone App</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span><span class="var-description">: Mixed Value you want to pass back.  Can be int, bool, string, or array.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddMessageSound" id="addMessageSound"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addMessageSound</span> (line <span class="line-number">807</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add Message Sound</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/DbConnect.html">DbConnect</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db</span><span class="src-sym">-&gt;</span><span class="src-id">show_errors</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/APNS.html">APNS</a></span><span class="src-sym">(</span><span class="src-var">$db</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'2010-01-01&nbsp;00:00:00'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageSound">addMessageSound</a><span class="src-sym">(</span><span class="src-str">'bingbong.aiff'</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;STRING&nbsp;OF&nbsp;FILE&nbsp;NAME</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addMessageSound
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$sound</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sound</span><span class="var-description">: Name of sound file in your Resources Directory</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnewMessage" id="newMessage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">newMessage</span> (line <span class="line-number">556</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Start a New Message</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/DbConnect.html">DbConnect</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db</span><span class="src-sym">-&gt;</span><span class="src-id">show_errors</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/APNS.html">APNS</a></span><span class="src-sym">(</span><span class="src-var">$db</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;CREATE&nbsp;THE&nbsp;OBJECT</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'2010-01-01&nbsp;00:00:00'</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;START&nbsp;A&nbsp;MESSAGE...&nbsp;SECOND&nbsp;ARGUMENT&nbsp;ACCEPTS&nbsp;ANY&nbsp;DATETIME&nbsp;STRING</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageAlert">addMessageAlert</a><span class="src-sym">(</span><span class="src-str">'You&nbsp;got&nbsp;your&nbsp;emails.'</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;ALERTS&nbsp;ARE&nbsp;TRICKY...&nbsp;SEE&nbsp;EXAMPLES</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageBadge">addMessageBadge</a><span class="src-sym">(</span><span class="src-num">9</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;PASS&nbsp;A&nbsp;NUMBER</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageSound">addMessageSound</a><span class="src-sym">(</span><span class="src-str">'bingbong.aiff'</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;ADD&nbsp;A&nbsp;SOUND</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;AND&nbsp;SEND&nbsp;IT&nbsp;ON&nbsp;IT'S&nbsp;WAY</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,</span><span class="src-num">3</span><span class="src-sym">,</span><span class="src-num">4</span><span class="src-sym">,</span><span class="src-num">5</span><span class="src-sym">,</span><span class="src-num">8</span><span class="src-sym">,</span><span class="src-num">15</span><span class="src-sym">,</span><span class="src-num">16</span><span class="src-sym">))</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;SEND&nbsp;MESSAGE&nbsp;TO&nbsp;MORE&nbsp;THAN&nbsp;ONE&nbsp;USER</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageAlert">addMessageAlert</a><span class="src-sym">(</span><span class="src-str">'Greetings&nbsp;Everyone!'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			newMessage
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$fk_device</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$delivery</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$fk_device</span><span class="var-description">: Foreign Key, or Array of Foreign Keys to the device you want to send a message to.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$delivery</span><span class="var-description">: Possible future date to send the message.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodprocessQueue" id="processQueue"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">processQueue</span> (line <span class="line-number">832</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Process all queued messages</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/DbConnect.html">DbConnect</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db</span><span class="src-sym">-&gt;</span><span class="src-id">show_errors</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/APNS.html">APNS</a></span><span class="src-sym">(</span><span class="src-var">$db</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'2010-01-01&nbsp;00:00:00'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageSound">addMessageSound</a><span class="src-sym">(</span><span class="src-str">'bingbong.aiff'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodprocessQueue">processQueue</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;SEND&nbsp;ALL&nbsp;MESSAGES&nbsp;NOW</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			processQueue
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodqueueMessage" id="queueMessage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">queueMessage</span> (line <span class="line-number">586</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Queue Message for Delivery</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/DbConnect.html">DbConnect</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$db</span><span class="src-sym">-&gt;</span><span class="src-id">show_errors</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../EasyAPNs/APNS.html">APNS</a></span><span class="src-sym">(</span><span class="src-var">$db</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodnewMessage">newMessage</a><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'2010-01-01&nbsp;00:00:00'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageAlert">addMessageAlert</a><span class="src-sym">(</span><span class="src-str">'You&nbsp;got&nbsp;your&nbsp;emails.'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageBadge">addMessageBadge</a><span class="src-sym">(</span><span class="src-num">9</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodaddMessageSound">addMessageSound</a><span class="src-sym">(</span><span class="src-str">'bingbong.aiff'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$apns</span><span class="src-sym">-&gt;</span><a href="../EasyAPNs/APNS.html#methodqueueMessage">queueMessage</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//&nbsp;ADD&nbsp;THE&nbsp;MESSAGE&nbsp;TO&nbsp;QUEUE</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			queueMessage
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 05 Jan 2010 11:25:59 -0600 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

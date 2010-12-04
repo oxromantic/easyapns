@@ -1,0 +1,3 @@
+PLEASE NOTE: EasyAPNs is for programmers who are proficient in PHP, MySQL and Objective C. If you are not skilled in these programming languages please use an alternative service such as Urban Airship ( http://urbanairship.com ).
+
+ALSO NOTE: One of the most common issues people have is that they cannot get their SSL Certificates working. The creation and testing of these SSL Certificates are not something we will be able to provide any assistance with as they are something that must be created outside the scope of this project.

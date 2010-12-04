@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class DbConnect</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class DbConnect</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Begin Document</p>
+		<p class="notes">
+			Located in <a class="field" href="_classes---class_DbConnect.php.html">/classes/class_DbConnect.php</a> (line <span class="field">35</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																				<div class="var-title">
+					static <span class="var-type">string</span>
+					<a href="#$instance" title="details" class="var-name">$instance</a>
+				</div>
+																																																																												<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$affected_rows" title="details" class="var-name">$affected_rows</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$DB_DATABASE" title="details" class="var-name">$DB_DATABASE</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$errno" title="details" class="var-name">$errno</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$error" title="details" class="var-name">$error</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$insert_id" title="details" class="var-name">$insert_id</a>
+				</div>
+																								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$is_locked" title="details" class="var-name">$is_locked</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$link" title="details" class="var-name">$link</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$log_errors" title="details" class="var-name">$log_errors</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$query_count" title="details" class="var-name">$query_count</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$recent_link" title="details" class="var-name">$recent_link</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$show_errors" title="details" class="var-name">$show_errors</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$sql" title="details" class="var-name">$sql</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">DbConnect</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#affected_rows" title="details" class="method-name">affected_rows</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#close" title="details" class="method-name">close</a>
+											(<span class="var-type">none</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#Connection" title="details" class="method-name">Connection</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#errno" title="details" class="method-name">errno</a>
+											(<span class="var-type">none</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#error" title="details" class="method-name">error</a>
+											(<span class="var-type">none</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#fetch_array" title="details" class="method-name">fetch_array</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$result</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#free_result" title="details" class="method-name">free_result</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$result</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#hide_errors" title="details" class="method-name">hide_errors</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#insert_id" title="details" class="method-name">insert_id</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#lock" title="details" class="method-name">lock</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$tables</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#num_queries" title="details" class="method-name">num_queries</a>
+											(<span class="var-type">none</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#num_rows" title="details" class="method-name">num_rows</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$result</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#prepare" title="details" class="method-name">prepare</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$do_like</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#query" title="details" class="method-name">query</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$only_first</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#raise_error" title="details" class="method-name">raise_error</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$error_message</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#show_errors" title="details" class="method-name">show_errors</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#unlock" title="details" class="method-name">unlock</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#_get" title="details" class="method-name">_get</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$property</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$instance" id="$instance"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">string</span>
+			<span class="var-name">$instance</span>
+						(line <span class="line-number">112</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The variable used to contain a singleton instance of the database connection.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$affected_rows" id="$affected_rows"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$affected_rows</span>
+						(line <span class="line-number">119</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The number of rows affected by the most recent query.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$DB_DATABASE" id="$DB_DATABASE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$DB_DATABASE</span>
+						(line <span class="line-number">105</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The Database.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$errno" id="$errno"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$errno</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">77</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The error number of the most recent database error message.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$error" id="$error"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$error</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">70</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The text of the most recent database error message.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$insert_id" id="$insert_id"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$insert_id</span>
+						(line <span class="line-number">121</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$is_locked" id="$is_locked"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$is_locked</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">84</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Do we currently have a lock in place?</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$link" id="$link"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$link</span>
+						(line <span class="line-number">42</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connection to MySQL.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$log_errors" id="$log_errors"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$log_errors</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">98</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Log errors? If set to true, the error message/sql is logged.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$query_count" id="$query_count"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$query_count</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">63</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds the number of queries executed.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$recent_link" id="$recent_link"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$recent_link</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">49</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds the most recent connection.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$show_errors" id="$show_errors"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$show_errors</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">91</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Show errors? If set to true, the error message/sql is displayed.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$sql" id="$sql"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$sql</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">56</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds the contents of the most recent SQL query.</p>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">128</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor. Initializes a database connection and selects our database.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">DbConnect</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodaffected_rows" id="affected_rows"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">affected_rows</span> (line <span class="line-number">247</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retuns the number of rows affected by the most recent query</p>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			affected_rows
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodclose" id="close"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">close</span> (line <span class="line-number">362</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Closes our connection to MySQL.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			close
+		</span>
+					(<span class="var-type">none</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">none</span>
+				<span class="var-name">0</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">connect</span> (line <span class="line-number">172</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connect to the Database.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			connect
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodConnection" id="Connection"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Connection</span> (line <span class="line-number">158</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Singleton pattern to retrieve database connection.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> MySQL database connection</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			Connection
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoderrno" id="errno"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">errno</span> (line <span class="line-number">386</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the MySQL error number.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			errno
+		</span>
+					(<span class="var-type">none</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">none</span>
+				<span class="var-name">0</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoderror" id="error"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">error</span> (line <span class="line-number">374</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the MySQL error message.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			error
+		</span>
+					(<span class="var-type">none</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">none</span>
+				<span class="var-name">0</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfetch_array" id="fetch_array"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">fetch_array</span> (line <span class="line-number">226</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Fetches a row from a query result and returns the values from that row as an array.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			fetch_array
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$result</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$result</span><span class="var-description">: The query result we are dealing with.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfree_result" id="free_result"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">free_result</span> (line <span class="line-number">335</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Frees memory associated with a query result.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			free_result
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$result</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$result</span><span class="var-description">: The query result we are dealing with.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhide_errors" id="hide_errors"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">hide_errors</span> (line <span class="line-number">351</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Turns database error reporting off</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			hide_errors
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinsert_id" id="insert_id"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_id</span> (line <span class="line-number">302</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the ID of the most recently inserted item in an auto_increment field</p>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			insert_id
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlock" id="lock"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">lock</span> (line <span class="line-number">270</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Lock database tables</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			lock
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$tables</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$tables</span><span class="var-description">: Array of table =&gt; lock type</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnum_queries" id="num_queries"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">num_queries</span> (line <span class="line-number">259</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the number of queries executed.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			num_queries
+		</span>
+					(<span class="var-type">none</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">none</span>
+				<span class="var-name">0</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnum_rows" id="num_rows"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">num_rows</span> (line <span class="line-number">237</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the number of rows in a result set.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			num_rows
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$result</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$result</span><span class="var-description">: The query result we are dealing with.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodprepare" id="prepare"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">prepare</span> (line <span class="line-number">314</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Escapes a value to make it safe for using in queries.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			prepare
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$do_like</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: Value to be escaped</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$do_like</span><span class="var-description">: Do we need to escape this string for a LIKE statement?</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodquery" id="query"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">query</span> (line <span class="line-number">192</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Executes a sql query. If optional $only_first is set to true, it will  return the first row of the result as an array.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			query
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$only_first</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sql</span><span class="var-description">: Query to run</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$only_first</span><span class="var-description">: Return only the first row, as an array?</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodraise_error" id="raise_error"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">raise_error</span> (line <span class="line-number">439</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">If there is a database error, the script will be stopped and an error message displayed.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			raise_error
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$error_message</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$error_message</span><span class="var-description">: The error message. If empty, one will be built with $this-&gt;sql.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshow_errors" id="show_errors"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_errors</span> (line <span class="line-number">343</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Turns database error reporting on</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			show_errors
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodunlock" id="unlock"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">unlock</span> (line <span class="line-number">289</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unlock tables</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			unlock
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_get" id="_get"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_get</span> (line <span class="line-number">141</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Singleton pattern to retrieve database connection.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> MySQL database connection</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_get
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$property</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$property</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 05 Jan 2010 11:25:59 -0600 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,1 @@
+* * * * * nice /usr/bin/php -f /absolute/path/to/apns.php fetch > /usr/local/apns/apns.log 2>&1 & #APNS Cron Job
